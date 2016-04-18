@@ -1,0 +1,29 @@
+# Test API endpoints
+
+test_api.get:
+  path: 'my-api/get.json'
+  defaults: { _controller: '\Drupal\test_api\Controller\TestAPIController::get_example' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+test_api.put:
+  path: 'my-api/put.json'
+  defaults: { _controller: '\Drupal\test_api\Controller\TestAPIController::put_example' }
+  methods:  [PUT]
+  requirements:
+    _access: 'TRUE'
+
+test_api.post:
+  path: 'my-api/post.json'
+  defaults: { _controller: '\Drupal\test_api\Controller\TestAPIController::post_example' }
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+test_api.delete:
+  path: 'my-api/delete.json'
+  defaults: { _controller: '\Drupal\test_api\Controller\TestAPIController::delete_example' }
+  methods:  [DELETE]
+  requirements:
+    _access: 'TRUE'
